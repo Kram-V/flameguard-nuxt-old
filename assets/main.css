@@ -1,0 +1,149 @@
+strong {
+  color: black;
+  font-weight: 800 !important;
+}
+
+.ckeditor-content-container {
+  font-size: 20px;
+  color: #374151;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 10px !important;
+}
+
+.ckeditor-content-container h6 {
+  font-size: 14px;
+}
+
+.ckeditor-content-container h6 {
+  font-size: 18px;
+  line-height: 28px;
+  margin-left: 80px;
+}
+.ckeditor-content-container h5 {
+  font-size: 17px;
+}
+
+.ckeditor-content-container h4 {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 20px;
+}
+
+.ckeditor-content-container h3 {
+  font-size: 23px;
+}
+
+.ckeditor-content-container h2 {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.ckeditor-content-container h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.ckeditor-content-container strong {
+  font-weight: 700;
+}
+
+.ckeditor-content-container ol {
+  list-style: decimal;
+  margin-left: 55px;
+  font-size: 18px;
+}
+
+.ckeditor-content-container ul {
+  list-style: disc;
+  margin-left: 55px;
+  font-size: 18px;
+}
+
+.ckeditor-content-container ul li {
+  margin-bottom: 4px;
+}
+
+.ckeditor-content-container ol li {
+  margin-bottom: 10px;
+}
+
+.ckeditor-content-container .ql-align-center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.ckeditor-content-container .ql-align-right {
+  text-align: left;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+}
+
+.ckeditor-content-container .image-uploading {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.ckeditor-content-container em {
+  font-weight: 500;
+}
+
+@media (max-width: 1535px) {
+  .ckeditor-content-container h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 850px) {
+  .ckeditor-content-container .ql-align-center {
+    flex-wrap: wrap;      
+  }
+}
+
+@media (max-width: 640px) {
+    .ckeditor-content-container .image-uploading img {
+      width: 100%;
+    } 
+  
+    .ckeditor-content-container h4 img {
+      width: 100%;        
+    }
+
+    .ckeditor-content-container .ql-align-right img {
+      width: 100%;        
+    }
+
+    .ckeditor-content-container ol {
+      margin-left: 20px;
+    }
+    
+    .ckeditor-content-container ul {
+      margin-left: 20px;
+    }
+
+    .ckeditor-content-container h6 {
+      margin-left: 20px;
+    }
+}
+
+@media (max-width: 560px) {
+  .ckeditor-content-container .image-uploading {
+    display: grid;
+  }  
+
+  .ckeditor-content-container h4 {
+    display: grid;
+  }
+
+  .ckeditor-content-container .ql-align-right {
+    display: grid;
+  }
+}
+
