@@ -26,15 +26,23 @@
       </p>
     </div> -->
 
-      <div style="z-index: 99" class="col-span-12 mb-24 mt-16 sm:mb-32 sm:mt-24 2xl:mb-56 2xl:mt-44 text-[30px] lg:text-[40px] text-center font-semibold">
-        <div class="flex justify-center mb-6">
-          <img class="w-[60px] lg:w-[80px] text-center" src="https://res.cloudinary.com/ds5ovkisn/image/upload/v1694846800/Flameguard%20Images/Flaticons/tool_ym9mzy.webp" alt="">
-        </div>
-
-        <div>
-          This webpage is still being updated. Come back later to check our contents.
-        </div>
+    <div
+      style="z-index: 99"
+      class="col-span-12 mb-24 mt-16 sm:mb-32 sm:mt-24 2xl:mb-56 2xl:mt-44 text-[30px] lg:text-[40px] text-center font-semibold"
+    >
+      <div class="flex justify-center mb-6">
+        <img
+          class="w-[60px] lg:w-[80px] text-center"
+          src="https://res.cloudinary.com/ds5ovkisn/image/upload/v1694846800/Flameguard%20Images/Flaticons/tool_ym9mzy.webp"
+          alt=""
+        />
       </div>
+
+      <div>
+        This webpage is still being updated. Come back later to check our
+        contents.
+      </div>
+    </div>
   </div>
 
   <!-- START OF MEDIA GALLERY -->
@@ -45,31 +53,29 @@
 </template>
 
 <script>
- export default {
+export default {
   methods: {
     reloadYouTubeVideo() {
       // Get the reference to the ElfSight component using the ref attribute
+
       const youtubeEmbed = this.$refs.youtubeEmbed;
 
       // Check if the reference exists before manipulating it
       if (youtubeEmbed) {
         // Clear the content inside the ElfSight component (i.e., the YouTube video)
-        youtubeEmbed.innerHTML = '';
+        youtubeEmbed.innerHTML = "";
 
         // Use the ElfSight library method to reload the YouTube video
         // Replace 'your-embed-id' with the actual ID provided by the library
-        ElfSightApps.init({ id: 'your-embed-id' });
+        ElfSightApps.init({ id: "your-embed-id" });
       } else {
-        console.error('youtubeEmbed ref not found.'); // Debugging purposes
+        console.error("youtubeEmbed ref not found."); // Debugging purposes
       }
-    }
+    },
   },
 
   unmounted() {
     this.reloadYouTubeVideo();
   },
-
 };
 </script>
-
-
